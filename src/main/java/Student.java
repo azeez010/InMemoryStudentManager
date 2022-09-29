@@ -1,3 +1,5 @@
+import java.text.MessageFormat;
+
 public class Student {
     private String Name;
 
@@ -23,16 +25,16 @@ public class Student {
 
 class Teacher{
     public static final String Name = "Name";
-    private int no;
-    private boolean truthy;
-
-    public Teacher(int no, boolean truthy) {
-        this.no = no;
-        this.truthy = truthy;
-    }
 
     public static String getName() {
         return Name;
     }
 
+    public Teacher() {
+
+    }
+
+    public static void shout(){
+        System.out.println(MessageFormat.format("My name is {0}, I am {1}", Name, 30));
+    }
 }
