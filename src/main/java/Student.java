@@ -23,12 +23,14 @@ public class Student {
 
 class Teacher{
     public static final String Name = "Name";
+    private int no;
+
+    public Teacher(int no) {
+        this.no = no;
+    }
 
     public static String getName() {
         return Name;
     }
 
-    public Teacher() {
-
-    }
 }
