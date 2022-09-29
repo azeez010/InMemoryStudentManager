@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.List;
+
+import com.student.helpers.Helper;
 
 public class Main {
     ///////////////////////////////////////////////////////////////////////////
@@ -9,14 +12,17 @@ public class Main {
         Student bode = new Student();
         bode.setName("Bode");
         System.out.println(bode.toString());
-        ArrayList<Student> students = new ArrayList<Student>();
+        List<Student> students = new ArrayList<Student>();
         students.add(bode);
         students.add(bode);
+
 
         for (Student student : students) {
             System.out.println(student);
         }
+        Student hasBode = Helper.searchArray(students, null);
 
+        System.out.println(hasBode);
         Student[] studentList = new Student[3];
         studentList[0] = bode;
         studentList[1] = bode;
@@ -33,6 +39,8 @@ public class Main {
         Student jay = new Student();
         jay.setName("Jay");
         System.out.println(jay);
+
+        Teacher.shout();
 
     }
 }
